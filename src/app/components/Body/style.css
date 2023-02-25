@@ -1,0 +1,75 @@
+.body {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+
+}
+
+.text {
+  width: 35%;
+  margin-bottom: 3.5%;
+  background-color: #171F26;
+
+  border-radius: 20px;
+
+}
+
+.projects {
+  width: 35%;
+}
+
+.project {
+  width: 80%;
+  height: 400px;
+  background-color: #171F26;
+  margin: 0 auto 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5%;
+  border-radius: 20px;
+
+
+}
+
+.project p {
+  color: #F1F2F4;
+  width: 80%;
+  margin-top: 1.5%;
+
+}
+
+.project span {
+  color: #A3ABB2;
+}
+
+
+
+
+.text p {
+  width: 80%;
+  text-align: justify;
+  margin: 10% auto;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+
+
+
+
+  color: #F1F2F4;
+}
+
+/* Responsive Images */
+.image-container {
+  width: 25vw;
+  height: 26.5vh;
+  position: relative;
+}
+
+.image-container .image {
+  width: 100%;
+  height: 100%;
+  position: relative !important;
+  object-fit: cover;
+}

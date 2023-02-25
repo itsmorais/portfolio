@@ -1,0 +1,30 @@
+.retangle {
+  width: 65%;
+  height: 5rem;
+  background-color: #171F26;
+  margin: auto;
+
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+
+
+
+}
+
+#black_retangle {
+  width: 40%;
+  height: 3rem;
+  background: #0C151D;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#black_retangle p,
+.retangle p {
+  color: #A3ABB2;
+}
