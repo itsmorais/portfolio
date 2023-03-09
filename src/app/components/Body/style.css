@@ -51,19 +51,14 @@
   text-align: justify;
   margin: 10% auto;
   font-weight: 500;
-  font-size: 30px;
   line-height: 45px;
-
-
-
-
   color: #F1F2F4;
 }
 
 /* Responsive Images */
 .image-container {
-  width: 25vw;
-  height: 26.5vh;
+  width: 27.5vw;
+  height: 20vw;
   position: relative;
 }
 

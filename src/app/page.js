@@ -63,8 +63,8 @@ export default function Home() {
       <div className={`profissional ${isLoading ? 'fade-in hide' : 'fade-in show'}`}>
         <Buttons
           onClick={handleButtonClick}
-          title={isProfessional ? 'Soft - Skills' : 'Skills'}
-          text={isProfessional ? 'Vida pessoal + Curiosidades' : 'Vida profissional'}
+          title={isProfessional ? 'Soft - Skills' : 'Hard - Skills'}
+          text={isProfessional ? 'Vida pessoal + Curiosidades' : 'Vida profissional + Habilidades'}
         />
         <Body bodyData={bodyData} hugeText={hugeText} />
       </div>

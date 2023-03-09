@@ -10,12 +10,18 @@
   --text-white: #F1F2F4;
   --text-gray: #A3ABB2;
   --button-background-gray: #171F26;
-  --button-background-black: #0C151D
+  --button-background-black: #0C151D;
+
+  --title-font-size: 1.875rem;
+  --subtitle-font-size: 1rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
 }
 
 @media(max-width:1080px) {
   html {
-    font-size: 93.75%;
+    font-size: 100%;
   }
 }
 
@@ -25,16 +31,30 @@
   }
 }
 
+/* BASE */
+html {
+  scroll-behavior: smooth;
+}
 body {
+  font: 400 1rem var(--body-font);
+  color: --var(--body-color);
+  -webkit-font-smoothing: antialiased;
   background-color: #0C151D;
   color: #ffffff;
 }
+.title {
+  font: 700 var(--title-font-size) var(--title-font);
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+
 
 body,
 input,
 textarea,
 button {
-  font: 500 1rem 'Poppins', sans-serif;
+  font-family: var(--body-font);
 }
 
 button {
