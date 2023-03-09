@@ -3,28 +3,44 @@ import Image from 'next/image'
 import '../../global.css'
 import './style.css'
 
-export default function Body(props){
-  const {bodydate} = props
-  console.log(bodydate)
 
-  return(
+export default function Body(props) {
+  const { bodyData } = props
+  const { hugeText } = props
+  const paragraphs = hugeText.split(".");
+
+
+  return (
     <div>
       <div className='body'>
-      <div className='projects'>
-       {bodydate.map((projeto)=>(
-          <div className='project'>
-            <p>{projeto.description}</p>
-            <Link href={projeto.link} target={'_blank'}>
-              <span>Clique aqui para ver o projeto</span></Link>
-            <div className={'image-container'}>
-            <Image src={projeto.img} fill  className='{image}'></Image></div>
-          </div>
-        ))}
-      </div>
+        <div className='projects'>
+          {bodyData.map((projeto) => (
+            <div key={projeto.description} className='project'>
+              <p>{projeto.description}</p>
+              {projeto.link &&
+                <Link href={projeto.link} target={'_blank'}>
+                  <span>Clique aqui para ver o projeto</span>
+                </Link>}
 
-      <div className='text'><p>Estou me graduando em Análise e Desenvolvimento de Sistemas pela Faculdade Tecnológica de São Paulo e sou estagiário de Desenvolvimento Full-Stack na Nexus-GeoEngenharia. <br/> <br/>
+              <div className={'image-container'}>
+                <Image
+                  src={projeto.img}
+                  alt={'Imagem de projeto web com javascript'}
+                  fill
+                  className='{image}'
+                  sizes="(max-width: 280px) 100vw,(max-width:280px) 50vw,33vw"
+                >
+                </Image></div>
+            </div>
+          ))}
+        </div>
 
-Além disso, trabalho como freelancer para empresas locais de São José dos Campos-SP, com foco em design visual e desempenho de site, garantindo que os requisitos não funcionais sejam atendidos para a satisfação do usuário.</p></div>
+        <div className="text">
+          {/* Render each paragraph as a separate <p> element */}
+          {paragraphs.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
 
 
       </div>

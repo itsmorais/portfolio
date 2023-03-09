@@ -5,7 +5,7 @@ export default function Buttons(props){
   return(
     <div>
       <div className='retangle'>
-        <div id='black_retangle'><p>{props.title}</p></div>
+        <button onClick={props.onClick} id='black_retangle'><p>{props.title}</p></button>
         <p>{props.text}</p>
       </div>
     </div>
