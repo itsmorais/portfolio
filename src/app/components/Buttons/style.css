@@ -1,5 +1,5 @@
 .retangle {
-  width: 80%;
+  width: calc(10% + 50vw);
   height: 4rem;
   background-color: #171F26;
   margin: auto;
@@ -15,16 +15,35 @@
 }
 
 #black_retangle {
-  width: 40%;
-  height: 2rem;
+  width: calc(10% + 15vw);
+  height: calc(5% + 2vw);
   background: #0C151D;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-color: transparent;
 }
 
 #black_retangle p,
 .retangle p {
   color: #A3ABB2;
+  font-weight: 500;
+}
+
+@media(max-width:500px) {
+  .retangle {
+    flex-direction: column-reverse;
+
+  }
+
+  #black_retangle {
+    width: 100%;
+    height: 100%;
+    background-color: #171F26;
+  }
+
+  .retangle>p {
+    display: none;
+  }
 }

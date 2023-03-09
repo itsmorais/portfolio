@@ -68,3 +68,40 @@ div.xp p {
   color: #A3ABB2;
 
 }
+
+@media(max-width:500px) {
+  html {
+    font-size: calc(8% + 2vw);
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 25px;
+    width: 50vw;
+    margin-bottom: 0;
+  }
+
+  .profile>img {
+    width: 50vw;
+    height: min-content;
+    margin: 0;
+  }
+
+  .myself>h1 {
+    font-size: calc(50% + 10vw);
+  }
+
+  .social {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  .xp {
+    gap: 30px;
+  }
+
+
+
+
+
+}

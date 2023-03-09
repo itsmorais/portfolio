@@ -19,9 +19,9 @@
   --body-font: 'DM Sans', sans-serif;
 }
 
-@media(max-width:1080px) {
+@media(max-width:2000px) {
   html {
-    font-size: 100%;
+    font-size: calc(8% + 1vw);
   }
 }
 
@@ -31,10 +31,13 @@
   }
 }
 
+
+
 /* BASE */
 html {
   scroll-behavior: smooth;
 }
+
 body {
   font: 400 1rem var(--body-font);
   color: --var(--body-color);
@@ -42,6 +45,7 @@ body {
   background-color: #0C151D;
   color: #ffffff;
 }
+
 .title {
   font: 700 var(--title-font-size) var(--title-font);
   color: var(--title-color);
@@ -118,4 +122,19 @@ footer {
 
 .fade-in.show {
   opacity: 1;
+}
+
+
+@media(max-width:500px) {
+  html {
+    font-size: calc(50% + 2vw);
+  }
+
+  div p {
+    font-size: calc(50% + 3vw);
+  }
+
+  footer {
+    font-size: 11px;
+  }
 }

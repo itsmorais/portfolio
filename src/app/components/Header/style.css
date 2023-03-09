@@ -17,10 +17,10 @@ div.navigation p {
   font-style: normal;
 }
 
-div..navigation p:hover {
+div.navigation p:hover {
   color: #5d565692;
   transition-delay: 150ms;
   transition-timing-function: ease-in;
-  transition-duration: 150ms;
+  transition-duration: 100ms;
 
 }
