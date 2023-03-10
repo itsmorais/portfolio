@@ -130,6 +130,11 @@ footer {
     font-size: calc(50% + 2vw);
   }
 
+  body {
+    touch-action: pan-y;
+
+  }
+
   div p {
     font-size: calc(50% + 3vw);
   }
