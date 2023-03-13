@@ -54,7 +54,7 @@ export default function Home() {
     ];
     hugeText =
 
-      'Sou natural de São José dos Campos-SP, fã das ciências humanas e tecnologia.Cursei um ano de licenciatura em história na UNIVAP, continuando minha paixão por meio de livros e palestras.Morei por nove meses em Dublin, na Irlanda, a melhor experiência que já tive.Trabalhei por quatro anos no setor aeronáuticoNamoro a mulher mais incrível que já conheci. Planejamos nos formar juntos, viajar bastante e formar uma família.';
+      'Sou natural de São José dos Campos-SP, fã das ciências humanas e tecnologia.Cursei um ano de licenciatura em história na UNIVAP, continuando minha paixão por meio de livros e palestras.Morei por nove meses em Dublin, na Irlanda, a melhor experiência que já tive.Trabalhei por quatro anos no setor aeronáutico.Namoro a mulher mais incrível que já conheci;Planejamos nos formar juntos, viajar bastante e formar uma família.';
   }
 
   return (
