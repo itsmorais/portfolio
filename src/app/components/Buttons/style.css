@@ -17,7 +17,7 @@
 #black_retangle {
   width: calc(10% + 15vw);
   height: calc(5% + 2vw);
-  background: #0C151D;
+  background: #FFE071;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -25,7 +25,9 @@
   border-color: transparent;
 }
 
-#black_retangle p,
+#black_retangle p{
+  color:#3d3d3d
+}
 .retangle p {
   color: #A3ABB2;
   font-weight: 500;
@@ -40,7 +42,7 @@
   #black_retangle {
     width: 100%;
     height: 100%;
-    background-color: #171F26;
+
   }
 
   .retangle>p {

@@ -7,8 +7,7 @@ export default function Nav(){
     <div className='navigation'>
       <Link href={'/'}><p>  Home </p> </Link>
       <Link href={'/'}><p>  Translate this page </p></Link>
-      <Link href={'/'}><p>  Vida Pessoal</p> </Link>
-      <Link href={'/'}><p>  Entre em contato</p> </Link>
+      <Link href={'https://wa.me/5512996791297?text=Olá%20Visitei%20seu%20website'} target='_blank'><p>  Entre em contato</p> </Link>
 
     </div>
   )
